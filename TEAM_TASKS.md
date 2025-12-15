@@ -8,9 +8,9 @@ The project was developed by a team of 6 developers with specialized roles:
 
 1. **MESFER** - Project Manager + Design (Admin)
 2. **YAMI** - Frontend Researcher (Researcher APIs)
-3. **ALI** - Backend Researcher (API Management)
+3. **ALI** - Backend Researcher (API Management+Researcher)
 4. **Ghazi** - Frontend Recruiter (Participant APIs)
-5. **Saud** - Backend Recruiter (Matching Algorithms)
+5. **Saud** - Backend Recruiter (Matching Algorithms+Participan)
 6. **Sultan** - Database + Tester (Admin Tools)
 
 ---
@@ -321,4 +321,4 @@ The project was developed by a team of 6 developers with specialized roles:
 - **UI Components**: 40+ reusable components in design system
 - **User Roles**: 2 main roles (Researcher, Participant) with distinct workflows
 
-This collaborative effort resulted in a fully functional research participant recruitment platform with modern architecture, comprehensive testing, and professional user experience.
+This collaborative effort resulted in a functional research participant recruitment platform with modern architecture, comprehensive testing, and professional user experience.
