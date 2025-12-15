@@ -32,7 +32,6 @@ npm run dev
 1. **Build Frontend:**
 ```bash
 npm run build
-npm start
 ```
 
 2. **Start Backend:**
@@ -98,16 +97,6 @@ npm run dev
 ✓ Compiled / in 452ms (247 modules)
 ```
 
-#### Production Build
-
-```bash
-# Build for production
-npm run build
-
-# Start production server
-npm start
-```
-
 ## Testing
 
 ### Backend Tests (Pytest)
@@ -164,14 +153,6 @@ pytest -k "test_login" -v
 
 ### Frontend Tests
 
-```bash
-# Run frontend tests (if configured)
-npm test
-
-# Run with coverage
-npm test -- --coverage
-```
-
 ## Manual Testing
 
 ### User Roles & Test Accounts
@@ -214,23 +195,18 @@ The application includes sample data with the following test accounts:
 
 ## API Testing
 
-### Using cURL
+### Using Invoke-WebRequest
 
 #### Health Check
-```bash
-curl http://localhost:5000/api/health
-```
+Invoke-WebRequest http://localhost:5000/api/health
 
 #### Login
-```bash
-curl -X POST http://localhost:5000/api/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{"email":"researcher1@example.com","password":"password123"}'
-```
+Invoke-WebRequest -Uri "http://localhost:5000/api/auth/login" -Method POST -Headers @{"Content-Type"="application/json"} -Body '{"email":"dr.emily.rodriguez@ucla.edu","password":"password12
+3"}'
 
 #### Get Profile (requires token)
 ```bash
-curl -X GET http://localhost:5000/api/auth/profile \
+Invoke-WebRequest -X GET http://localhost:5000/api/auth/profile \
   -H "Authorization: Bearer YOUR_JWT_TOKEN"
 ```
 
